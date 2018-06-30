@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/border_dialog"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/comment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_toolbar_title_size" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edt_reply_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/comment"
+        android:inputType="text|textNoSuggestions"
+        android:maxLines="5"
+        android:minHeight="@dimen/_40dp"
+        android:paddingEnd="@dimen/_5dp"
+        android:paddingStart="@dimen/_5dp"
+        android:textSize="@dimen/_16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@color/light_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:background="@drawable/white_corners"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/edt_upload_image"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:background="@drawable/white_corners"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/upload_image"
+            android:imeOptions="actionNext"
+            android:paddingEnd="@dimen/_10dp"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_10dp"
+            android:paddingStart="@dimen/_10dp"
+            android:textSize="@dimen/_16sp" />
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:text="@string/upload"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@color/light_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_min_height"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/alert_dialog_cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_18sp" />
+
+        <View
+            android:layout_width="@dimen/_1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray" />
+
+
+        <Button
+            android:id="@+id/btn_submit_small"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/submit_small"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_18sp" />
+    </LinearLayout>
+
+</LinearLayout>

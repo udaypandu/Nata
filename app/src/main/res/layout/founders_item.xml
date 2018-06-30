@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_115dp"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/_10dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:paddingTop="@dimen/_10dp"
+        android:layout_width="@dimen/_115dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_thumbnail"
+            android:layout_width="@dimen/_95dp"
+            android:layout_height="@dimen/_95dp"
+            android:background="@android:color/white"
+            android:padding="@dimen/_3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/avatar_image" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="@dimen/_115dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_12sp" />
+
+    <TextView
+        android:id="@+id/txt_mail"
+        android:layout_width="@dimen/_115dp"
+        android:layout_height="@dimen/_20dp"
+        android:background="@android:color/white"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/app_name"
+        android:textColor="@color/computer_hope"
+        android:textSize="@dimen/_12sp" />
+
+</LinearLayout>

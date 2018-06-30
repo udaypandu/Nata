@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tv_my_groups"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:background="@color/background_gray"
+        android:gravity="center"
+        android:paddingRight="@dimen/_10dp"
+        android:paddingStart="@dimen/_10dp"
+        android:text="@string/my_groups"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/_20sp"
+        android:visibility="visible" />
+
+    <GridView
+        android:id="@+id/grid_our_forum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_my_groups"
+        android:background="@android:color/white"
+        android:numColumns="2"
+        android:padding="@dimen/_5dp" />
+
+</RelativeLayout>

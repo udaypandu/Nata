@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_andhra_pradesh"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_10dp"
+        android:paddingRight="@dimen/_10dp"
+        android:paddingStart="@dimen/_10dp"
+        android:text="@string/forum_founders"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_18sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/hs_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160dp"
+        android:layout_below="@+id/txt_andhra_pradesh"
+        android:background="@android:color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_founders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hs_layout" />
+
+</RelativeLayout>

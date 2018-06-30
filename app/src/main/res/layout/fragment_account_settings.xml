@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical"
+    android:padding="@dimen/_25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_id_colon"
+            android:textColor="@color/news_text_color"
+            android:textSize="@dimen/_20sp" />
+
+        <TextView
+            android:id="@+id/tv_email_original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_20sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_old_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45dp"
+        android:layout_marginTop="@dimen/_18dp"
+        android:background="@drawable/white_corners"
+        android:hint="@string/old_password"
+        android:inputType="textPassword"
+        android:paddingEnd="@dimen/_10dp"
+        android:paddingLeft="@dimen/_10dp"
+        android:paddingRight="@dimen/_10dp"
+        android:paddingStart="@dimen/_10dp"
+        android:textSize="@dimen/_16sp" />
+
+    <EditText
+        android:id="@+id/et_new_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45dp"
+        android:layout_marginTop="@dimen/_18dp"
+        android:background="@drawable/white_corners"
+        android:hint="@string/new_password"
+        android:inputType="textPassword"
+        android:paddingEnd="@dimen/_10dp"
+        android:paddingLeft="@dimen/_10dp"
+        android:paddingRight="@dimen/_10dp"
+        android:paddingStart="@dimen/_10dp"
+        android:textSize="@dimen/_16sp" />
+
+    <EditText
+        android:id="@+id/et_confirm_new_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45dp"
+        android:layout_marginTop="@dimen/_18dp"
+        android:background="@drawable/white_corners"
+        android:hint="@string/confirm_new_password"
+        android:inputType="textPassword"
+        android:paddingEnd="@dimen/_10dp"
+        android:paddingLeft="@dimen/_10dp"
+        android:paddingRight="@dimen/_10dp"
+        android:paddingStart="@dimen/_10dp"
+        android:textSize="@dimen/_16sp" />
+
+    <Button
+        android:id="@+id/bt_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18dp"
+        android:background="@drawable/blue_corners"
+        android:gravity="center"
+        android:text="@string/update"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20dp" />
+</LinearLayout>

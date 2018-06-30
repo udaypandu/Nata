@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_skills_required"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_50dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_50dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_5dp"
+            android:text="@string/skills_required"
+            android:textColor="@color/blackColor"
+            android:textSize="@dimen/_14sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_5dp"
+            android:text="08/16"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/_13dp" />
+
+        <TextView
+            android:id="@+id/tv_it_software"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_skills_required"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="IT-Software"
+            android:textSize="@dimen/_14dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_10dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_comment_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8dp"
+                    android:text="@string/comment_icon"
+                    android:textColor="@color/very_light_gray_janaswaram_view"
+                    android:textSize="@dimen/_35dp" />
+
+                <TextView
+                    android:id="@+id/txt_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/_8dp"
+                    android:text="2"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_15dp" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.NativeExpressAdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        ads:adSize="360x100"
+        ads:adUnitId="@string/native_ad_unit_id" />
+</LinearLayout>

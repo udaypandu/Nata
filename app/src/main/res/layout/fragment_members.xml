@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/_10dp"
+        android:paddingStart="@dimen/_10dp">
+
+        <TextView
+            android:id="@+id/tv_add_members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add_members"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_20dp" />
+
+        <TextView
+            android:id="@+id/tv_members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/members_hint"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_20dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@color/dark_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/list_members"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/LayoutDashBoardFootter"
+            android:divider="@color/color_hexa"
+            android:dividerHeight="@dimen/_2dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_no_members_in_this_forum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/no_members_in_this_forum"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_20sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

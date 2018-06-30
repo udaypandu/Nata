@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/LayoutDashBoardFootter"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_230dp">
+
+                <ImageView
+                    android:id="@+id/img_news_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/place_holder" />
+
+                <ImageView
+                    android:id="@+id/img_video"
+                    android:layout_width="@dimen/_40dp"
+                    android:layout_height="@dimen/_40dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/white_video"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_home_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bg_toolbar"
+                    android:paddingBottom="@dimen/_5dp"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:paddingStart="@dimen/_10dp"
+                    android:paddingTop="@dimen/_10dp"
+                    android:text="@string/news_home_hint"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_5dp"
+                android:paddingTop="@dimen/_10dp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/LayoutDashBoardFootter"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom">
+
+        <include layout="@layout/footerbar" />
+    </LinearLayout>
+
+
+</RelativeLayout>

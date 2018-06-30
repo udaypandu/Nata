@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/color_hexa"
+        android:dividerHeight="@dimen/_2dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_no_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No News Found"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_20sp"
+        android:visibility="gone" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_vv"
+        android:orientation="vertical"
+        android:layout_below="@+id/recycler_view"
+        android:layout_marginBottom="@dimen/_70dp"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/_25sp"
+        android:background="@color/color_hexa"
+        android:padding="@dimen/_5dp"
+        android:id="@+id/txt_video"
+        android:layout_marginTop="@dimen/_15dp"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15dp"
+        android:divider="@color/color_hexa"
+        android:dividerHeight="@dimen/_2dp" />
+
+    <TextView
+        android:id="@+id/tv_no_videos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center|center_horizontal"
+        android:text="No Videos Found"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/_25sp"
+        android:id="@+id/txt_event"
+        android:padding="@dimen/_5dp"
+        android:background="@color/color_hexa"
+        android:layout_marginTop="@dimen/_15dp"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15dp"
+        android:divider="@color/color_hexa"
+        android:dividerHeight="@dimen/_2dp" />
+
+    <TextView
+        android:id="@+id/tv_no_events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center|center_horizontal"
+        android:text="No Events Found"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_20sp"
+        android:visibility="gone" />
+
+    </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/LayoutDashBoardFootter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom">
+
+        <include layout="@layout/footer_job_posting" />
+    </LinearLayout>
+
+</RelativeLayout>

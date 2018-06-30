@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="integer_one">1</integer>
+    <integer name="integer_two">2</integer>
+    <integer name="integer_three">3</integer>
+    <integer name="integer_four">4</integer>
+    <integer name="integer_five">5</integer>
+    <integer name="integer_six">6</integer>
+    <integer name="integer_seven">7</integer>
+    <integer name="integer_ten">10</integer>
+    <integer name="integer_twenty">20</integer>
+    <integer name="integer_forty_nine">49</integer>
+    <integer name="integer_fifty">50</integer>
+    <integer name="integer_hundred">100</integer>
+    <integer name="integer_three_hundred">300</integer>
+
+
+</resources>

@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_hexa"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_our_force"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_10dp"
+        android:paddingRight="@dimen/_10dp"
+        android:paddingStart="@dimen/_10dp"
+        android:text="@string/topics"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:id="@+id/view"
+        android:layout_below="@+id/txt_our_force"
+        android:background="@color/color_hexa" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/view"
+        android:divider="@color/color_hexa"
+        android:dividerHeight="@dimen/_1dp" />
+
+    <LinearLayout
+        android:id="@+id/LayoutDashBoardFootter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom">
+
+        <include layout="@layout/footer_job_posting" />
+    </LinearLayout>
+
+</RelativeLayout>

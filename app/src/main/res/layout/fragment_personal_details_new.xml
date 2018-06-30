@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical"
+    tools:context="com.kapuwelfare.fragments.PersonalDetailsNewFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_personal_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:text="@string/personal"
+                android:textColor="@color/dark_gray_color"
+                android:textSize="@dimen/_20sp" />
+
+            <EditText
+                android:id="@+id/edt_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="@dimen/_25dp"
+                android:layout_marginLeft="@dimen/_25dp"
+                android:layout_marginRight="@dimen/_25dp"
+                android:layout_marginStart="@dimen/_25dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginTop="@dimen/_25dp"
+                android:background="@drawable/white_corners"
+                android:hint="@string/first_name"
+                android:paddingStart="@dimen/_20dp" />
+
+            <EditText
+                android:id="@+id/edt_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="@dimen/_25dp"
+                android:layout_marginLeft="@dimen/_25dp"
+                android:layout_marginRight="@dimen/_25dp"
+                android:layout_marginStart="@dimen/_25dp"
+                android:layout_marginTop="@dimen/_25dp"
+                android:background="@drawable/white_corners"
+                android:hint="@string/last_name"
+                android:paddingLeft="@dimen/_20dp" />
+
+            <EditText
+                android:id="@+id/edt_father_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="@dimen/_25dp"
+                android:layout_marginLeft="@dimen/_25dp"
+                android:layout_marginRight="@dimen/_25dp"
+                android:layout_marginStart="@dimen/_25dp"
+                android:layout_marginTop="@dimen/_25dp"
+                android:background="@drawable/white_corners"
+                android:hint="@string/father_name"
+                android:paddingStart="@dimen/_20dp" />
+
+            <EditText
+                android:id="@+id/edt_gothram"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="@dimen/_25dp"
+                android:layout_marginLeft="@dimen/_25dp"
+                android:layout_marginRight="@dimen/_25dp"
+                android:layout_marginStart="@dimen/_25dp"
+                android:layout_marginTop="@dimen/_25dp"
+                android:background="@drawable/white_corners"
+                android:hint="@string/gothram"
+                android:paddingStart="@dimen/_20dp" />
+
+            <EditText
+                android:id="@+id/edt_gender"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="@dimen/_25dp"
+                android:layout_marginLeft="@dimen/_25dp"
+                android:layout_marginRight="@dimen/_25dp"
+                android:layout_marginStart="@dimen/_25dp"
+                android:layout_marginTop="@dimen/_25dp"
+                android:background="@drawable/white_corners"
+                android:hint="@string/gender"
+                android:paddingStart="@dimen/_20dp" />
+
+            <EditText
+                android:id="@+id/edt_dob"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="@dimen/_25dp"
+                android:layout_marginLeft="@dimen/_25dp"
+                android:layout_marginRight="@dimen/_25dp"
+                android:layout_marginStart="@dimen/_25dp"
+                android:layout_marginTop="@dimen/_25dp"
+                android:background="@drawable/white_corners"
+                android:hint="@string/dob"
+                android:paddingStart="@dimen/_20dp" />
+
+            <EditText
+                android:id="@+id/edt_blood_group"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="@dimen/_25dp"
+                android:layout_marginLeft="@dimen/_25dp"
+                android:layout_marginRight="@dimen/_25dp"
+                android:layout_marginStart="@dimen/_25dp"
+                android:layout_marginTop="@dimen/_25dp"
+                android:background="@drawable/white_corners"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/blood"
+                android:paddingEnd="@dimen/_5dp"
+                android:paddingRight="@dimen/_5dp"
+                android:paddingStart="@dimen/_20dp" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="@dimen/_15dp"
+                android:layout_marginEnd="@dimen/_25dp"
+                android:layout_marginLeft="@dimen/_25dp"
+                android:layout_marginRight="@dimen/_25dp"
+                android:layout_marginStart="@dimen/_25dp"
+                android:layout_marginTop="@dimen/_25dp"
+                android:background="@drawable/blue_corners"
+                android:text="@string/next_caps"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

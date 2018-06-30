@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homepage"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Homepage" />
+        <item
+            android:id="@+id/administration"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Administration" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_assessment_black_24dp"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/accounts_settings"
+            android:icon="@drawable/ic_settings_applications_black_24dp"
+            android:title="Accounts Settings" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_lock_black_24dp"
+            android:title="Logout" />
+
+        <item
+            android:id="@+id/New_homepage"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="New Homepage" />
+    </group>
+</menu>

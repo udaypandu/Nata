@@ -1,0 +1,404 @@
+<resources>
+    <string name="app_name">NATA</string>
+    <string name="party_updates">PARTY UPDATES</string>
+    <string name="raise_a_concern">RAISE A CONCERN</string>
+    <string name="join_discussion">JOIN DISCUSSION</string>
+    <string name="janaswaram">JANASWARAM</string>
+    <string name="our_force">MEMBERS</string>
+    <string name="topics">Topics</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email_or_mobile">Email or Mobile</string>
+    <string name="email_optional">Email (Optional)</string>
+    <string name="mobile_hint">+91 Mobile</string>
+    <string name="password">Password</string>
+    <string name="create_password">Create Password</string>
+    <string name="news_home_hint">Jana Sena chief Pawan Kalyan vows to fight for handloom weavers of Andhra Pradesh, Telangana.</string>
+
+    <!--<string name="facebook_app_id">1845387109110595</string>
+    <string name="fb_login_protocol_scheme">fb1845387109110595</string>-->
+
+    <string name="askforhelp">JANASWARAM</string>
+    <string name="share_your_opinion">SHARE YOUR ADVICES</string>
+    <string name="financial_aid">JOIN DISCUSSION</string>
+    <string name="community_forum">JOIN DISCUSSION</string>
+    <string name="already_have_an_account">Already Have an Account ?</string>
+    <string name="login_caps">LOGIN</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_quires">My Advices</string>
+    <string name="moderators">Team Incharge</string>
+    <string name="press_again_to_exit">press again to exit</string>
+
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="alert_dialog_setting">Settings</string>
+    <string name="no_internet_msg">This feature requires internet connection. Please check your internet settings and try again.</string>
+    <string name="no_internet_msg_main">This Application required internet connection. Please check your internet setting and try again.</string>
+    <string name="no_internet_title">No internet</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="continu">Continue</string>
+
+    <string name="sign_in_caps">SIGN IN</string>
+    <string name="careers">CAREERS</string>
+
+    <string name="our_forum">OUR FORUM</string>
+    <string name="not_registered_yet">Not Registered yet ?</string>
+    <string name="click_here_for_invitation">Click here for Invitation</string>
+
+    <string name="create_account">Create Account</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="username">Username</string>
+
+
+    <string name="submit">SUBMIT</string>
+    <string name="submit_small">Submit</string>
+    <string name="username_email_id">Username / Email ID</string>
+    <string name="forgot_username_password">FORGOT USERNAME / PASSWORD</string>
+
+    <string name="ask_for_invitation">Ask for Invitation</string>
+    <string name="registration">Registration</string>
+    <string name="id_proof">ID Proof</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_id">Email ID</string>
+    <string name="confirm_email_id">Confirm Email ID</string>
+    <string name="phone_no">Phone No</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="district">District</string>
+    <string name="mandal">Mandal</string>
+    <string name="village">Village</string>
+    <string name="zip_code">Zip code</string>
+    <string name="select_id_proof">Select Id Proof</string>
+    <string name="enter_id_proof_no">Enter ID Proof No</string>
+    <string name="profession">Profession</string>
+    <string name="already_have_an_account_sign_in">Already Have an Account ? Sign In</string>
+
+    <string name="super_admin">Super Admin</string>
+
+    <string name="icon_menu">&#xf0c9;</string>
+    <string name="arrow_left">&#xf060;</string>
+    <string name="long_arrow_left">&#xf177;</string>
+    <string name="chevron_left">&#xf053;</string>
+
+    <string name="latest_news">News</string>
+    <string name="news">News</string>
+    <string name="events">Events</string>
+    <string name="email">Email</string>
+    <string name="police_constables">Police Constable Post@AP State Level Police Recruitment Board</string>
+    <string name="company_name">Company Name</string>
+    <string name="company_logo">Company Logo</string>
+    <string name="browse">Browse</string>
+    <string name="positions">Positions :</string>
+
+    <string name="post_job">Post Job</string>
+    <string name="jobs_applied">Jobs Applied</string>
+    <string name="my_post">My Posts</string>
+    <string name="apply_job">Apply Job</string>
+    <string name="cover_letter">Cover Letter</string>
+    <string name="upload_resume">Upload Resume</string>
+    <string name="apply">Apply</string>
+    <string name="filter">Sponsors</string>
+    <string name="find_job">Find Jobs</string>
+    <string name="career_center">Career Center</string>
+    <string name="skills_required">Skills Required for user design and difference between UI and UD. Any insights?</string>
+
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+
+    <string name="select_category">Select Category*</string>
+    <string name="supporting_doc">Supporting Doc</string>
+    <string name="topic_name">Topic Name</string>
+    <string name="message">Enter Message</string>
+    <string name="replies">Replies</string>
+    <string name="reply">Reply</string>
+    <string name="quick_reply">Quick Reply</string>
+    <string name="ask_a_question">Ask A Question</string>
+
+    <string name="create_topic">Create Topic</string>
+
+
+    <string name="all_forums">All Forums</string>
+    <string name="active_forums">Active Forums</string>
+    <string name="moderations">Moderations</string>
+
+    <string name="actor">Actor</string>
+    <string name="active_users">Active Users</string>
+    <string name="forum_founders">Forum Founders</string>
+    <string name="forum_caps">FORUM</string>
+    <string name="no_posts_in_this_forum">No Posts In this Forum</string>
+    <string name="no_members_in_this_forum">No Members In this Forum</string>
+
+
+    <string name="right_icon">&#xf0da;</string>
+    <string name="left_icon">&#xf0d9;</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="organization">Organization</string>
+    <string name="individual">Individual</string>
+    <string name="contact">Contact Details</string>
+    <string name="organization_details">Organizations Details</string>
+    <string name="personal">Personal Details</string>
+    <string name="other_details">Other Details</string>
+    <string name="organion_click">Organization</string>
+    <string name="organion_click_here">Click Here to Register</string>
+    <string name="tv_individual_click">Individual</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="education">Education</string>
+    <string name="gantavenkatasai">ganta venkata sai punyavathi</string>
+    <string name="ravi_kiran">Ravi Kiran</string>
+    <string name="last_name_surname">Last Name / Surname</string>
+    <string name="father_name">Fathers Name</string>
+    <string name="gothram">Gothram</string>
+    <string name="gender">Gender</string>
+    <string name="dob">Date of Birth</string>
+    <string name="blood">Blood Group</string>
+    <string name="photo_upload">Photo Upload</string>
+    <string name="mobile">Mobile</string>
+    <string name="current">Current Address</string>
+    <string name="permanent_address">Permanent Address</string>
+    <string name="login_information">Login Information</string>
+    <string name="other_information">Other Information</string>
+    <string name="occupation">Occupation</string>
+
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="edit_caps">EDIT</string>
+    <string name="post_caps">POST</string>
+    <string name="next_caps">NEXT</string>
+    <string name="previous_caps">PREVIOUS</string>
+    <string name="view_profile">View Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="email_name">ravikiran.koya@gmail.com</string>
+    <string name="it_software">IT-Software</string>
+    <string name="comany_name">Nevexa Digital Pvt. Ltd.</string>
+    <string name="location_db">Location</string>
+    <string name="user_details">User Details</string>
+
+    <string name="step_1">Step 1 :</string>
+    <string name="step_1_text">Please fill details in the below form</string>
+    <string name="step_2">Step 2 :</string>
+    <string name="step_2_text">You will receive an email with a link to create your User ID &amp; Password</string>
+    <string name="step_3">Step 3 :</string>
+    <string name="step_3_text">You can start accessing the services with your login</string>
+    <string name="step_4">Step 4 :</string>
+    <string name="step_4_text">Admin will review the application and if required we might reach you for any clarifications</string>
+
+
+    <string name="news_date_hint">10th June 2017</string>
+
+    <string name="click_here_for_homepage">Click Here for Homepage</string>
+    <string name="invitation_request_is_sent_successfully">Invitation Request is sent successfully</string>
+    <string name="invitation_request_is_sent_successfully_first">Please check your email for the registration link. You can create the username &amp;  password to access the services. Incase if you don\'t find the registration link in the inbox please check your spam folder. </string>
+    <string name="invitation_request_is_sent_successfully_second">Please note that admin approval is still pending. Based on the approval you might have continues access to service.</string>
+
+    <string name="careers_icon">&#xE54B;</string>
+    <string name="askforhelp_icon">&#xEB48;</string>
+    <string name="financial_aid_icon">&#xE8A3;</string>
+    <string name="our_forum_icon">&#xE7FB;</string>
+
+    <string name="post_job_icon">&#xf085;</string>
+    <string name="jobs_applied_icon">&#xf086;</string>
+    <string name="my_posts_icon">&#xf0c0;</string>
+    <string name="filter_icon">&#xf1bc;</string>
+    <string name="find_jobs">&#xf1e5;</string>
+
+    <string name="comment_icon">&#xf075;</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="navigation">Navigation</string>
+    <string name="administration">ADMINISTRATION</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="no_send_directly">No, Send directly to email given in job description</string>
+    <string name="yes_send_resumes">Yes, Send resumes to me directly</string>
+    <string name="mentor_candidate">Mentor Candidate *</string>
+    <string name="candidate_can_contact">Yes, Candidaate can contact me for updates or suggestions</string>
+    <string name="no_iam_just">No, I am just posting a job, No further information can be provided</string>
+
+    <string name="login_alert_msg">Please Login to proceed further</string>
+    <string name="txt_login_required">Login Required</string>
+    <string name="for_analytics_we_are_getting_your_location_only_once_login">For analytics we are getting your location only once login.</string>
+
+    <string name="empty">empty</string>
+    <string name="cancel">Cancel</string>
+    <string name="accept_small">accept</string>
+    <string name="update">UPDATE</string>
+    <string name="update_small">Updates</string>
+    <string name="hired">Hired</string>
+    <string name="not_hired">Not Hired</string>
+    <string name="home">Home</string>
+
+
+    <string name="submit_resume">Submit Resume</string>
+    <string name="update_status">Update Status</string>
+    <string name="no_more_data_to_display">No more jobs to display</string>
+
+
+    <string name="popular">General</string>
+    <string name="general">General</string>
+    <string name="custom">Committees</string>
+    <string name="more">More</string>
+    <string name="private_name">Private</string>
+    <string name="public_name">Public</string>
+    <string name="members">Members</string>
+
+    <string name="accounts_settings">Accounts Settings</string>
+    <string name="email_id_colon">Email ID : </string>
+    <string name="email_hint"> srini@test.com</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+
+    <string name="admin_users">Admin Users</string>
+    <string name="arrow_drop_down_circle">&#xE5C6;</string>
+    <string name="add_user_caps">ADD USER</string>
+    <string name="location">Location</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_state">Select State</string>
+    <string name="select_city">Select City</string>
+    <string name="select_district">Select District</string>
+    <string name="add_no_users">Add NO Users</string>
+    <string name="next">Next</string>
+
+    <string name="edit_icon">&#xE3C9;</string>
+    <string name="next_icon">&#xE315;</string>
+    <string name="previous_icon">&#xE314;</string>
+    <string name="delete_icon">&#xE16C;</string>
+    <string name="camera_icon">&#xE412;</string>
+    <string name="gallery_icon">&#xE3F4;</string>
+
+    <string name="add_members">+ ADD Members</string>
+    <string name="members_hint">0 Members</string>
+    <string name="topic_title">Topic Title</string>
+    <string name="write_something">Write Something...</string>
+    <string name="data">data</string>
+    <string name="comment">Comment</string>
+
+    <string name="fa_paper_plane">&#xf1d8;</string>
+    <string name="fa_camera_icon">&#xf030;</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-7636050720356078/2398450335</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-7636050720356078/5212315932</string>
+    <string name="native_ad_unit_id">ca-app-pub-7636050720356078/9428862733</string>
+    <string name="native_ad_unit_id_big">ca-app-pub-7636050720356078/8069880737</string>
+    <string name="native_ad_unit_id_very_big">ca-app-pub-7636050720356078/6922279936</string>
+
+
+    <!--AskForHelp-->
+
+    <string name="moderate">Moderate</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="upload">Upload</string>
+    <string name="select_category_drop_down">Select Category</string>
+    <string name="my_groups">My Groups</string>
+
+
+    <string name="moderate_keyboard_arrow_left">&#xE314;</string>
+    <string name="moderate_keyboard_arrow_right">&#xE315;</string>
+    <string name="report_problem">&#xE160;</string>
+
+    <string name="no_geocoder_available">No geocoder available</string>
+
+    <string name="fetch_address">Fetch address</string>
+
+    <string name="address_found">Address found</string>
+
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+
+
+    <!--Administration-->
+    <string name="admin">Admin</string>
+    <string name="add_user">Add User</string>
+    <string name="role_change">Role Change</string>
+    <string name="registered_users">Registered Users</string>
+    <string name="pending_approvals">Pending Approvals</string>
+    <string name="pending_registration">Pending Registration</string>
+    <string name="under_review">Under Review</string>
+
+    <string name="add_user_icon">&#xE7FE;</string>
+    <string name="role_change_icon">&#xE838;</string>
+    <string name="registered_users_icon">&#xE7FB;</string>
+    <string name="pending_approvals_icon">&#xE7FC;</string>
+    <string name="pending_registration_icon">&#xE853;</string>
+    <string name="under_review_icon">&#xE7FF;</string>
+
+    <string name="website_contents">Website Contents</string>
+    <string name="add_content">Add \n Content</string>
+    <string name="videos">Videos</string>
+    <string name="approve_contents">Approve \n Contents</string>
+    <string name="view_contents">View \n Contents</string>
+    <string name="add_content_icon">&#xE03B;</string>
+    <string name="approve_contents_icon">&#xE065;</string>
+    <string name="view_contents_icon">&#xE05F;</string>
+
+    <string name="sms_email">SMS / Email</string>
+    <string name="group">Group</string>
+    <string name="approve">Approve</string>
+    <string name="sent">Sent</string>
+    <string name="group_icon">&#xE24C;</string>
+    <string name="approve_icon">&#xE253;</string>
+    <string name="sent_icon">&#xE24B;</string>
+
+    <string name="forum">Forum</string>
+    <string name="create_forum">Create Forum</string>
+    <string name="list_of_forums">List of Forums</string>
+    <string name="moderate_forum">Moderate Forum</string>
+    <string name="create_forum_icon">&#xE3C1;</string>
+    <string name="list_of_forums_icon">&#xE42A;</string>
+    <string name="moderate_forum_icon">&#xE55A;</string>
+
+    <string name="careers_small">Careers</string>
+    <string name="approve_jobs">Approve Jobs</string>
+    <string name="view_jobs">View Jobs</string>
+    <string name="rejected_jobs">Rejected Jobs</string>
+    <string name="approve_jobs_icon">&#xE862;</string>
+    <string name="view_jobs_icon">&#xE85D;</string>
+    <string name="rejected_jobs_icon">&#xE85F;</string>
+
+    <string name="feature_not_available">This Feature is not yet ready, will be coming soon.</string>
+
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="kapu_welfare">Kapu Welfare</string>
+
+    <string name="facebook_app_id">2122240904671596</string>
+    <string name="fb_login_protocol_scheme">fb2122240904671596</string>
+    <string name="facebook_icon">&#xf082;</string>
+    <string name="fb_icon">&#xf09a;</string>
+    <string name="google_icon">&#xf0d5;</string>
+
+
+    <string name="notification_error_ssl_cert_invalid">You are accessing a page with an
+        untrusted or invalid certificate. Do you want to continue?</string>
+    <string name="show">Show</string>
+    <string name="new_user">New User ?</string>
+    <string name="register_now">Register Now</string>
+    <string name="enter_your_email">Enter your email address and we\'ll send you a link to reset your password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="return_to">Return to</string>
+    <string name="or">OR</string>
+
+
+    <string name="no_more_news">No more news</string>
+    <string name="no_more_videos">No more videos</string>
+    <string name="no_more_programme">No more Programme</string>
+    <string name="back_arrow">&#xf060;</string>
+    <string name="create_an_account">Create An Account</string>
+    <string name="join_us_with">JOIN US WITH NATA FORM</string>
+    <string name="Latest_updates">LATEST UPDATES</string>
+    <string name="services">SERVICES</string>
+    <string name="services_small">Services</string>
+    <string name="members_caps">MEMBERS</string>
+    <string name="discussions">DISCUSSIONS</string>
+    <string name="discussions_small">Discussions</string>
+</resources>
