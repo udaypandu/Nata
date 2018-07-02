@@ -89,6 +89,13 @@ public class DashboardActivity extends BaseActivity implements IAsyncCaller {
             Menu nav_Menu = navigationView.getMenu();
             nav_Menu.findItem(R.id.administration).setVisible(true);
         }
+        if (Utility.getSharedPrefStringData(this, Constants.IS_FB_LOGIN).equalsIgnoreCase(Constants.NATA)) {
+            Menu nav_Menu = navigationView.getMenu();
+            nav_Menu.findItem(R.id.accounts_settings).setVisible(true);
+        } else {
+            Menu nav_Menu = navigationView.getMenu();
+            nav_Menu.findItem(R.id.accounts_settings).setVisible(false);
+        }
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -200,6 +207,7 @@ public class DashboardActivity extends BaseActivity implements IAsyncCaller {
         Utility.setSharedPrefStringData(this, Constants.LOGIN_SESSION_ID, "");
         Utility.setSharedPrefStringData(this, Constants.PREF_KEY_LOGIN_NAME, "");
         Utility.setSharedPrefStringData(this, Constants.PREF_KEY_LOGIN_PASSWORD, "");
+        Utility.setSharedPrefStringData(this, Constants.IS_FB_LOGIN, "");
 
         Utility.setSharedPrefBooleanData(this, Constants.GROUP_MODERATOR, false);
         Utility.setSharedPrefStringData(this, Constants.ADMIN_LINK, "");
@@ -226,12 +234,12 @@ public class DashboardActivity extends BaseActivity implements IAsyncCaller {
                     Utility.showToastMessage(this, "Please select only pdf");
                 }
             }
-        } else if (requestCode == Constants.FROM_CONTACT_DETAILS) {
-            if (resultCode == Activity.RESULT_OK) {
-                Uri selectedImageUri = data.getData();
-                String path = FilePath.getPath(this, selectedImageUri);
-                ContactDetailsNewFragment.getInstance().updateFile(path);
-            }
+        }   else if (requestCode == Constants.FROM_CONTACT_DETAILS) {
+                if (resultCode == Activity.RESULT_OK) {
+                    Uri selectedImageUri = data.getData();
+                    String path = FilePath.getPath(this, selectedImageUri);
+                    ContactDetailsNewFragment.getInstance().updateFile(path);
+                }
         } else if (requestCode == Constants.FROM_POSTING_LOGO_FILE_ID) {
             if (resultCode == Activity.RESULT_OK) {
                 Uri selectedImageUri = data.getData();

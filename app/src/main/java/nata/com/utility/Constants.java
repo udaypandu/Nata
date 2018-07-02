@@ -7,6 +7,7 @@ package nata.com.utility;
 public class Constants {
 
     public static final String APP_PREF = "Kapuwelfare_Pref";
+    public static final String NATA ="nata" ;
     public static int SPLASH_TIME_OUT = 2000;
     public static int ID_PROOF_CODE = 101;
 
@@ -15,6 +16,7 @@ public class Constants {
     public static final String PREF_KEY_IS_APP_SIGNIN_OR_SIGNUP = "iSAppSignInOrSignup";
     public static final String PREF_KEY_UUID = "UUID";
     public static final String PREF_KEY_EMAIL = "EMAIL";
+    public static final String IS_FB_LOGIN = "IS_FB_LOGIN";
     public static final String PREF_KEY_ROLE = "ROLE";
     public static final String PREF_KEY_ROLE_NAME = "ROLE_NAME";
     public static final String PREF_KEY_FIRST_NAME = "PREF_KEY_FIRST_NAME";

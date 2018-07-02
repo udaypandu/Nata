@@ -94,6 +94,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public CallbackManager callbackManager;
 
     protected boolean mAddressRequested = false;
+    private String mFromData = "";
 
 
     /**
@@ -457,6 +458,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void loginAuth(String id, String email, String type) {
+        mFromData = type;
         LinkedHashMap<String, String> paramMap = new LinkedHashMap<>();
         paramMap.put(Constants.API_KEY, Constants.API_KEY_VALUE);
         paramMap.put("username", email);
@@ -502,6 +504,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
 
     private void loginData() {
+        mFromData = Constants.NATA;
         LinkedHashMap<String, String> paramMap = new LinkedHashMap<>();
         paramMap.put(Constants.API_KEY, Constants.API_KEY_VALUE);
         paramMap.put("username", edt_username.getText().toString());
@@ -547,6 +550,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         // Utility.showToastMessage(this, loginModel.getMessage());
                         Utility.setSharedPrefStringData(this, Constants.PREF_KEY_IS_APP_SIGNIN_OR_SIGNUP, "done");
                         Utility.setSharedPrefStringData(this, Constants.PREF_KEY_UUID, loginModel.getUuid());
+                        Utility.setSharedPrefStringData(LoginActivity.this, Constants.IS_FB_LOGIN, mFromData);
                         Utility.setSharedPrefStringData(this, Constants.PREF_KEY_EMAIL, loginModel.getEmail());
                         Utility.setSharedPrefStringData(this, Constants.PREF_KEY_ROLE, loginModel.getRole());
                         Utility.setSharedPrefStringData(this, Constants.PREF_KEY_ROLE_NAME, loginModel.getRole_name());

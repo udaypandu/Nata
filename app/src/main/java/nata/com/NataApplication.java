@@ -27,9 +27,9 @@ public class NataApplication extends MultiDexApplication {
         super.onCreate();
         mInstance = this;
         initImageLoader(getApplicationContext());
-        MobileAds.initialize(getApplicationContext(), Utility.getResourcesString(this, R.string.banner_ad_unit_id));
+      //  MobileAds.initialize(getApplicationContext(), Utility.getResourcesString(this, R.string.banner_ad_unit_id));
         //MobileAds.initialize(getApplicationContext(), Utility.getResourcesString(this, R.string.interstitial_ad_unit_id));
-        MobileAds.initialize(getApplicationContext(), Utility.getResourcesString(this, R.string.native_ad_unit_id));
+     //   MobileAds.initialize(getApplicationContext(), Utility.getResourcesString(this, R.string.native_ad_unit_id));
 
 //        FacebookSdk.sdkInitialize(getApplicationContext());
 //        AppEventsLogger.activateApp(this);

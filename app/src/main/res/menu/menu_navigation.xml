@@ -25,6 +25,7 @@
         <item
             android:id="@+id/New_homepage"
             android:icon="@drawable/ic_home_black_24dp"
+            android:visible="false"
             android:title="New Homepage" />
     </group>
 </menu>

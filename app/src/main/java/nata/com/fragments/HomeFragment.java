@@ -1,9 +1,12 @@
 package nata.com.fragments;
 
 
+import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +18,9 @@ import android.widget.TextView;
 
 import nata.com.activities.DashboardActivity;
 import nata.com.activities.LoginActivity;
+import nata.com.designes.MaterialDialog;
 import nata.com.nata.R;
+import nata.com.permisions.Permissions;
 import nata.com.utility.Constants;
 import nata.com.utility.Utility;
 
@@ -98,6 +103,16 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         txt_sign_inn.setOnClickListener(this);
         ll_sign_in.setOnClickListener(this);
         img_center.setOnClickListener(this);
+
+        checkForRunTimePermissions();
+    }
+
+    private void checkForRunTimePermissions() {
+        if (Utility.isMarshmallowOS()) {
+            Permissions.getInstance().setActivity(getActivity());
+            CheckForPermissions(getActivity(), Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                    Manifest.permission.READ_EXTERNAL_STORAGE);
+        }
     }
 
     @Override
@@ -145,4 +160,43 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 break;
         }
     }
+    private void CheckForPermissions(final Context mContext, final String... mPermissions) {
+        // A request for two permissions
+        Permissions.getInstance().requestPermissions(new Permissions.IOnPermissionResult() {
+            @Override
+            public void onPermissionResult(Permissions.ResultSet resultSet) {
+
+                if (!resultSet.isPermissionGranted(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+                    final MaterialDialog denyDialog = new MaterialDialog(mContext, Permissions.TITLE,
+                            Permissions.MESSAGE);
+                    //Positive
+                    denyDialog.setAcceptButton("RE-TRY");
+                    denyDialog.setOnAcceptButtonClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            CheckForPermissions(mContext, mPermissions);
+                        }
+                    });
+                    denyDialog.show();
+                }
+            }
+
+            @Override
+            public void onRationaleRequested(Permissions.IOnRationaleProvided callback, String... permissions) {
+                Permissions.getInstance().showRationaleInDialog(Permissions.TITLE,
+                        Permissions.MESSAGE, "RE-TRY", callback);
+            }
+        }, mPermissions);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (Utility.isMarshmallowOS()) {
+            CheckForPermissions(getActivity(),
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                    Manifest.permission.READ_EXTERNAL_STORAGE);
+        }
+    }
 }
+

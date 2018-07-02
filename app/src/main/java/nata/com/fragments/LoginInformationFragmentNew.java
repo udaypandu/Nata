@@ -197,7 +197,7 @@ public class LoginInformationFragmentNew extends Fragment implements IAsyncCalle
         paramMap.put("gothram", PersonalDetailsNewFragment.edt_gothram.getText().toString());
         paramMap.put("blood_group_id", PersonalDetailsNewFragment.getBloodId());
         paramMap.put("occupation", getOccupationId());
-        paramMap.put("father_name", PersonalDetailsNewFragment.edt_father_name.getText().toString());
+        //paramMap.put("father_name", PersonalDetailsNewFragment.edt_father_name.getText().toString());
         paramMap.put("company", edt_company.getText().toString());
         paramMap.put("phone", ContactDetailsNewFragment.edt_phone.getText().toString());
         paramMap.put("zip", ContactDetailsNewFragment.edt_zip_code.getText().toString());
